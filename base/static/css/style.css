@@ -1,0 +1,11 @@
+.ul_nav {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img {
+    position: absolute;
+    top: 10px;
+    width: 100px;
+    left: 20px;
+}

@@ -1,0 +1,43 @@
+{% load static %}
+
+<nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/"><img src="{% static 'img/LogoB.png' %}" alt="" class="img"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ul_nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="/">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/biografia">BIOGRAFIA</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/conciertos">CONCIERTOS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/tienda">TIENDA</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        MULTIMEDIA
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="/fotos">FOTOS</a></li>
+                        <li><a class="dropdown-item" href="/videos">VIDEOS</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/contacto">CONTACTO</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/carrito">CARRITO</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
