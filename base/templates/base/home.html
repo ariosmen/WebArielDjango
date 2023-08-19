@@ -1,9 +1,14 @@
 {% extends 'base/base.html' %}
+{% load static %}
 
 {% block title %}Home{% endblock %}
 
 {% block content %}
 
-<h1>Hola Ariel</h1>
+<div class="container-fluid contenedor-home">
+    <div class="contenedor-img">
+        <a class="link-img" href="/tienda"><img src="{% static 'img/tapa.jpg' %}" alt="" class="img-home"></a>
+    </div>
+</div>
 
 {% endblock %}

@@ -28,4 +28,5 @@ urlpatterns = [
     path('', include('videos.urls')),
     path('', include('contacto.urls')),
     path('', include('carrito.urls')),
+    path('', include('novedades.urls')),
 ]

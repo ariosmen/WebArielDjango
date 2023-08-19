@@ -1,0 +1,23 @@
+{% extends 'base/base.html' %}
+
+{% block title %} Conciertos {% endblock %}
+
+{% block content %}
+
+<div class="caja-conciertos">
+
+    <table class="table-conciertos">
+        {% for concierto in conciertos %}
+            <tr>
+                <td>{{concierto.ciudad}}</td>
+                <td>{{concierto.pais}}</td>
+                <td>{{concierto.fecha}}</td>
+                <td>{{concierto.lugar}}</td>
+                <td><button href="#" type="submit" class="btn">Ticket</button></td>
+            </tr>
+        {% endfor %}
+    </table>
+    
+</div>
+
+{% endblock %}

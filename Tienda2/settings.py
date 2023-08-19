@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     'fotos',
     'videos',
     'tienda',
+    'novedades',
 ]
 
 MIDDLEWARE = [
