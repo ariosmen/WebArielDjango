@@ -6,12 +6,11 @@
 
 <div class="caja-conciertos">
 
-    <table class="table-conciertos">
+    <table class="tabla-conciertos">
         {% for concierto in conciertos %}
             <tr>
                 <td>{{concierto.ciudad}}</td>
-                <td>{{concierto.pais}}</td>
-                <td>{{concierto.fecha}}</td>
+                <td>{{concierto.fecha | date:"d/m/y"}}</td>
                 <td>{{concierto.lugar}}</td>
                 <td><button href="#" type="submit" class="btn">Ticket</button></td>
             </tr>

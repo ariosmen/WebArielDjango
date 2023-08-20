@@ -1,4 +1,8 @@
 from django.shortcuts import render
+from novedades.models import Novedad
 
 def novedades(request):
-    return render(request, 'novedades.html')
+    
+    novedades = Novedad.objects.all()
+    
+    return render(request, 'novedades.html', {'novedades': novedades})

@@ -4,4 +4,17 @@
 
 {% block content %}
 
+    <div class="caja-novedades">
+
+        {% for novedad in novedades %}
+            <div class="novedad">
+                <h1>{{novedad.titulo}}</h1>
+                <h5>{{novedad.descripcion}}</h5>
+                <a class="leermas" href="">Leer mas</a>
+            </div>
+            <hr>
+        {% endfor %}
+
+    </div>
+
 {% endblock %}

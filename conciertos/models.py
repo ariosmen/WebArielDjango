@@ -10,4 +10,4 @@ class Concierto(models.Model):
         db_table = 'conciertos'
         verbose_name = 'concierto'
         verbose_name_plural = 'conciertos'
-        
+        ordering = ['fecha']

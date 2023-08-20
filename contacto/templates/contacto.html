@@ -1,7 +1,22 @@
 {% extends 'base/base.html' %}
 
-{% block title %} Formulario de Contacto{% endblock %}
+{% block title %} Formulario de Contacto {% endblock %}
 
 {% block content %} 
     
+    <div class="caja-formulario">
+    
+        {% if formulario.errors %}
+            <p>Error al enviar</p>
+        {% endif %}
+            
+        {% if valid %}
+            <h4>El mail fue enviado correctamente</h4>
+        {% endif %}
+            
+        <form action="" method="post" class="formulario"> {% csrf_token %}
+            {{formulario.as_p}}
+            <input type="submit" value="Enviar" class="input">
+        </form>
+    </div>
 {% endblock %}
