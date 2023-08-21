@@ -30,15 +30,15 @@
             <p>Error al enviar</p>
         {% endif %}
             
-        {% if valid %}
-            <h4>El mail fue enviado correctamente</h4>
-        {% endif %}
         <div class="formulario">
             <form action="" method="post"> {% csrf_token %}
                 <h4 class="escribeme">Escrìbeme</h4>
                 {{ formulario | crispy}}
                 <button type="submit" class="button btn">Enviar</button>
             </form>
+            {% if valid %}
+                <h4>El mail fue enviado correctamente</h4>
+            {% endif %}
         </div>
     </div>
 {% endblock %}
