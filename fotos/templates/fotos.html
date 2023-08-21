@@ -1,7 +1,26 @@
 {% extends 'base/base.html' %}
+{% load static %}
 
 {% block title %} Fotos{% endblock %}
 
 {% block content %}
-
+    <div class="caja-fotos">
+        <section class="section-fotos-1">
+            <img src="{% static 'img/fotos/1.jpg' %}" alt="">
+            <img src="{% static 'img/fotos/2.jpg' %}" alt="">
+            <img src="{% static 'img/fotos/3.jpg' %}" alt="">
+            <img src="{% static 'img/fotos/4.jpg' %}" alt="">
+            <img src="{% static 'img/fotos/5.jpg' %}" alt="">
+            <img src="{% static 'img/fotos/6.jpg' %}" alt="">
+        </section>
+        
+        <div class="section-fotos-2">
+            <img class="img" src="{% static 'img/fotos/1.jpg' %}" alt="">
+            <img class="img" src="{% static 'img/fotos/2.jpg' %}" alt="">
+            <img class="img" src="{% static 'img/fotos/3.jpg' %}" alt="">
+            <img class="img" src="{% static 'img/fotos/4.jpg' %}" alt="">
+            <img class="img" src="{% static 'img/fotos/5.jpg' %}" alt="">
+            <img class="img" src="{% static 'img/fotos/6.jpg' %}" alt="">
+        </div>
+    </div>
 {% endblock %}

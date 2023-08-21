@@ -2,9 +2,29 @@
 
 {% block title %} Formulario de Contacto {% endblock %}
 
-{% block content %} 
+{% load crispy_forms_tags %}
+
+{% block content %}
     
     <div class="caja-formulario">
+
+        <div class="contratacion">
+            <div>
+                <h1>Contratación</h1>
+            </div>
+            <div>
+                <h3>Ariel Mendez</h3>
+            </div>
+            <div>
+                <h3>arielmendezok@gmail.com</h3>
+            </div>
+            <div>
+                <h2>Teléfono de contacto</h2>
+            </div>
+            <div>
+                <h3>+54 223 446 12 19</h3>
+            </div>
+        </div>
     
         {% if formulario.errors %}
             <p>Error al enviar</p>
@@ -13,10 +33,12 @@
         {% if valid %}
             <h4>El mail fue enviado correctamente</h4>
         {% endif %}
-            
-        <form action="" method="post" class="formulario"> {% csrf_token %}
-            {{formulario.as_p}}
-            <input type="submit" value="Enviar" class="input">
-        </form>
+        <div class="formulario">
+            <form action="" method="post"> {% csrf_token %}
+                <h4 class="escribeme">Escrìbeme</h4>
+                {{ formulario | crispy}}
+                <button type="submit" class="button btn">Enviar</button>
+            </form>
+        </div>
     </div>
 {% endblock %}

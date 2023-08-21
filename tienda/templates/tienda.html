@@ -1,7 +1,33 @@
 {% extends 'base/base.html' %}
 
-{% block title %} Formulario de Contacto{% endblock %}
+{% load static %}
+
+{% block title %} Tienda{% endblock %}
 
 {% block content %}
+    <div class="caja-tienda">
+        
+        {% for producto in productos %}
+        
+            <div class="caja-producto">
+                <h2>{{ producto.nombre }}</h2>
+                
+                {% if producto.imagen %}
+                <div class="caja-imagen">
+                    <img src="{{ producto.imagen.url }}" alt="" class="img-tienda">
+                </div>
+                {% else %}
+                <div class="caja-imagen">
+                    <img src="{% static 'img/noimage.jpg' %}" alt="" class="img-tienda">
+                </div>
+                {% endif %}
+                    
+                <p>Precio: U$S {{ producto.precio }}</p>
+                <p>{{producto.categoria}}</p>
+                <button class="btn class-btn">Comprar</button>
+            </div>
 
+        {% endfor %}
+
+    </div>
 {% endblock %}

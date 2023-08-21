@@ -4,9 +4,9 @@
     <div class="caja-titulo">
         <a class="navbar-brand {%if request.path == '/' %}active{% endif %}" href="{% url 'home' %}">
             {%if request.path == '/' %}
-                <img src="{% static 'img/LogosoloB.png' %}" alt="" class="img"></a>
+                <img src="{% static 'img/LogosoloB.png' %}" alt="" class="img-logo"></a>
             {% else %}
-                <img src="{% static 'img/LogosoloN.png' %}" alt="" class="img"></a>
+                <img src="{% static 'img/LogosoloN.png' %}" alt="" class="img-logo"></a>
             {%endif%}
     </div>
     <nav class="navbar navbar-expand-lg bg-secondary.bg-gradient">
