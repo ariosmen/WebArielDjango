@@ -5,4 +5,4 @@ def tienda(request):
     
     productos = Producto.objects.all()
     
-    return render(request, 'tienda.html', {'productos': productos})
+    return render(request, 'tienda.html', {'productos': productos}) 

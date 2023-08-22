@@ -19,16 +19,16 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0 ul_nav">
                 <li class="nav-item">
-                    <a class="nav-link {% if request.path == '/biografia/' %}activo{% endif %}" href="/biografia">BIOGRAFIA</a>
+                    <a class="nav-link {% if request.path == '/biografia/' %}activo{% endif %}" href="{% url 'biografia' %}">BIOGRAFIA</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link {% if request.path == '/conciertos/' %}activo{% endif %}" href="/conciertos">CONCIERTOS</a>
+                    <a class="nav-link {% if request.path == '/conciertos/' %}activo{% endif %}" href="{% url 'conciertos' %}">CONCIERTOS</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link {% if request.path == '/novedades/' %}activo{% endif %}" href="/novedades">NOVEDADES</a>
+                    <a class="nav-link {% if request.path == '/novedades/' %}activo{% endif %}" href="{% url 'novedades' %}">NOVEDADES</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link {% if request.path == '/tienda/' %}activo{% endif %}" href="/tienda">TIENDA</a>
+                    <a class="nav-link {% if request.path == '/tienda/' %}activo{% endif %}" href="{% url 'tienda' %}">TIENDA</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -36,15 +36,15 @@
                     MULTIMEDIA
                 </a>
                 <ul class="dropdown-menu drop-menu">
-                    <li><a class="dropdown-item drop-item {% if request.path == '/fotos/' %}activo{% endif %}" href="/fotos">FOTOS</a></li>
-                    <li><a class="dropdown-item drop-item {% if request.path == '/videos/' %}activo{% endif %}" href="/videos">VIDEOS</a></li>
+                    <li><a class="dropdown-item drop-item {% if request.path == '/fotos/' %}activo{% endif %}" href="{% url 'fotos' %}">FOTOS</a></li>
+                    <li><a class="dropdown-item drop-item {% if request.path == '/videos/' %}activo{% endif %}" href="{% url 'videos' %}">VIDEOS</a></li>
                 </ul>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link {%if request.path == '/contacto/' %}activo{%endif%}" href="/contacto">CONTACTO</a>
+                    <a class="nav-link {%if request.path == '/contacto/' %}activo{%endif%}" href="{% url 'contacto' %}">CONTACTO</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link {% if request.path == '/carrito/' %}activo{% endif %}" href="/carrito">CARRITO</a>
+                    <a class="nav-link {% if request.path == '/carrito/' %}activo{% endif %}" href="{% url 'carrito' %}">CARRITO</a>
                 </li>
             </ul>
         </div>
